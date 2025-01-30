@@ -7,8 +7,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* semi-transparent background */
-    z-index: 9999; /* Ensures the loading box is on top of other elements */
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
 }
 
 .loadingBox {
@@ -26,8 +26,8 @@
 }
 
 .loadingLogo {
-    height: 40vmin; /* Adjust this depending on the size of the PNG */
-    width: auto;    /* To maintain the aspect ratio */
+    height: 40vmin;
+    width: auto;
     pointer-events: none;
 }
 

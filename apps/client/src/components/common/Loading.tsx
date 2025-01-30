@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';  // Import the Image component from Next.js
+import Image from 'next/image';
 import logo from '../../assets/logo.png';
 import s from './Loading.module.scss';
 
@@ -29,8 +29,8 @@ const Loading: React.FC<LoadingProps> = ({ loadingTime = 1000 }) => {
                     src={logo}
                     alt="logo"
                     className={s.loadingLogo}
-                    width={100}  // You can specify a fixed width if you want
-                    height={100} // You can specify a fixed height if you want
+                    width={100}
+                    height={100}
                 />
                 <span className={s.loadingText}>Loading...</span>
             </div>
