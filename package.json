@@ -1,0 +1,17 @@
+{
+    "name": "dodam-today",
+    "private": true,
+    "workspaces": ["apps/client", "apps/backend"],
+    "scripts": {
+        "test": "test",
+        "dev": "concurrently \"npm:dev:api\" \"npm:dev:client\"",
+        "dev:api": "cd apps/api && npm run start:dev",
+        "dev:client": "cd apps/client && npm run dev",
+        "build": "concurrently \"npm:build:api\" \"npm:build:client\"",
+        "build:api": "cd apps/api && npm run build",
+        "build:client": "cd apps/client && npm run build",
+        "product": "concurrently \"npm:product:api\" \"npm:product:client\"",
+        "product:api": "cd apps/api && ???",
+        "product:client": "cd apps/client && ???"
+    }
+}
