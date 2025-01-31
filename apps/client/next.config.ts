@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   async rewrites() {
     return [
       {
